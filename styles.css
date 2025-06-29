@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.category-text {
+  letter-spacing: 0.3rem;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.main-text {
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  margin-top: 20px;
+}
+
+.information-text {
+  line-height: 1.5;
+  margin: 30px 0px;
+}
+
+.price-text {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(158, 36%, 37%);
+  margin-right: 20px;
+}
+
+.price span {
+  font-size: 14px;
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+}
+
+body {
+  color: hsl(228, 12%, 48%);
+  background-color: hsl(30, 38%, 92%);
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.card {
+  margin-top: 5vh;
+  width: 645px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+}
+.card img {
+  width: 322.5px;
+  display: block;
+  border-radius: 10px 0px 0px 10px;
+}
+.card .main {
+  padding: 40px 30px;
+}
+.card .price {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.card button {
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease 0s;
+  transition-property: background-color;
+}
+.card button img {
+  width: 14px;
+  margin-right: 14px;
+}
+.card button:hover {
+  background-color: hsl(158, 42%, 18%);
+  transition: 0.3s ease 0s;
+  transition-property: background-color;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 660px) {
+  .card {
+    grid-template-columns: 1fr;
+    width: 90vw;
+  }
+  .card img {
+    width: 100%;
+    content: url("/images/image-product-mobile.jpg");
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+  }
+}
+.attribution {
+  margin-top: 10vh;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */
